@@ -31,6 +31,9 @@ This is a project made by me since I've always had an interest in animals and I'
 ### Database
 - **PostgreSQL**
 
+### Api
+-**https://api-ninjas.com/api/animals**
+
 ---
 
 ## 📄 Project Structure
