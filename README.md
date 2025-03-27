@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# FaunaVault 🦁🌿
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Your Encyclopedia of Animal Species**
 
-## Available Scripts
+This is a project made by me since I've always had an interest in animals and I'd like to put it in real life!
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌍 About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**FaunaVault** is a full-stack web application designed to be a digital vault of animal species around the world. It allows users to explore, learn, and contribute information about diverse animal species. This project combines modern technologies to deliver an engaging and scalable platform for wildlife enthusiasts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React** - For building the user interface
+- **Tailwind CSS** - For fast and responsive styling
+- **Axios** - For making HTTP requests to the backend
+- **React Router** - For routing and navigation
 
-### `npm run build`
+### Backend
+- **Node.js + Express.js** - For building the API server
+- **Prisma ORM** - For interacting with PostgreSQL database
+- **dotenv** - For managing environment variables
+- **CORS** - For handling cross-origin requests
+- **bcrypt** - For secure password hashing
+- **jsonwebtoken (JWT)** - For authentication
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Database
+- **PostgreSQL**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📄 Project Structure
 
-### `npm run eject`
+```
+faunavault/
+├── backend/
+│   ├── prisma/
+│   ├── src/
+│   ├── .env
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── tailwind.config.js
+│   ├── .env
+│   └── package.json
+├── database/
+│   └── schema.sql (Optional)
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔥 Installation & Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Backend
+```bash
+cd backend
+npm install
+npx prisma init
+# Add your PostgreSQL connection string in .env
+npx prisma migrate dev --name init
+npm run dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌱 Core Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✅ Explore animal species database  
+✅ View detailed information about each species  
+✅ User authentication (optional for contributors)  
+✅ Add new species (authenticated users)  
+✅ Responsive and modern UI with Tailwind
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🗂️ Next Goals
 
-### Analyzing the Bundle Size
+- Add filtering & search for species
+- Improve UI/UX with animations & better layouts
+- Add contributor system for logged-in users
+- Create admin routes for content management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
